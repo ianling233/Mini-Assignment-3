@@ -24,23 +24,17 @@ export default class App extends Component {
         const count = this.state.count;
         return (
             <div>
-                <h3>Count: {count}</h3>
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row">
-                        <div className="col">
-                            <Square handleAddCount={this.handleAddCount} handleSubtractCount={this.handleSubtractCount}/>
-                        </div>
-                        <div className="col">
-                            <Square handleAddCount={this.handleAddCount} handleSubtractCount={this.handleSubtractCount}/>
-                        </div>
+                        <h3>Count: {count}</h3>
                     </div>
                     <div className="row">
-                        <div className="col square-box" style={{"backgroundColor":"blue"}}>
-                            <Square handleAddCount={this.handleAddCount} handleSubtractCount={this.handleSubtractCount}/>
-                        </div>
-                        <div className="col square-box" style={{"backgroundColor":"blue"}}>
-                            <Square handleAddCount={this.handleAddCount} handleSubtractCount={this.handleSubtractCount}/>
-                        </div>
+                        <Square handleAddCount={this.handleAddCount} handleSubtractCount={this.handleSubtractCount}/>
+                        <Square handleAddCount={this.handleAddCount} handleSubtractCount={this.handleSubtractCount}/>
+                    </div>
+                    <div className="row">
+                        <Square handleAddCount={this.handleAddCount} handleSubtractCount={this.handleSubtractCount}/>
+                        <Square handleAddCount={this.handleAddCount} handleSubtractCount={this.handleSubtractCount}/>
                     </div>
                 </div>
             </div>

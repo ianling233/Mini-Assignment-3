@@ -2,5 +2,6 @@
     height: 100px;
     width: 100px;
     border: 1px solid grey;
+    display: inline-block;
     /* background-color: green; */
 }

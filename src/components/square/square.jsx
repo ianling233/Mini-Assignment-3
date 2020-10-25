@@ -20,8 +20,6 @@ export default class square extends Component {
             this.props.handleSubtractCount()
         }
         
-
-
     }
     render () {
         const color = this.state.color;
